@@ -29,6 +29,9 @@
     {"name":"snd_rockdestroy","order":3,"path":"sounds/snd_rockdestroy/snd_rockdestroy.yy",},
     {"name":"snd_shoot","order":4,"path":"sounds/snd_shoot/snd_shoot.yy",},
     {"name":"spr_button","order":1,"path":"sprites/spr_button/spr_button.yy",},
+    {"name":"spr_enemy_flying","order":3,"path":"sprites/spr_enemy_flying/spr_enemy_flying.yy",},
+    {"name":"spr_enemy_swimming","order":4,"path":"sprites/spr_enemy_swimming/spr_enemy_swimming.yy",},
+    {"name":"spr_enemy_walking","order":5,"path":"sprites/spr_enemy_walking/spr_enemy_walking.yy",},
     {"name":"spr_player_walk","order":2,"path":"sprites/spr_player_walk/spr_player_walk.yy",},
   ],
 }

@@ -1,3 +1,4 @@
+#region set player movement and animation
 if keyboard_check(vk_up)
 {
 	motion_set(90, player_speed);
@@ -91,11 +92,14 @@ else if (keyboard_check_released(vk_down) && keyboard_check_released(vk_right))
     motion_set(315, 0);
 	image_speed = 0;
 }
+#endregion
 
-move_wrap(true,true,0);
+//clamp player movement
+x = clamp(x, 0 + player_width / 2 , room_width - player_width / 2);
+y = clamp(y, 0 + player_height / 2 , room_width - player_height / 2);
 
-if mouse_check_button_pressed(mb_left)
-{
-	instance_create_layer(x,y,"Instances",obj_bullet);
-	audio_play_sound(snd_shoot, 0, false, 1, 0, random_range(0.8, 1.2));
-}
+//if mouse_check_button_pressed(mb_left)
+//{
+//	instance_create_layer(x,y,"Instances",obj_bullet);
+//	audio_play_sound(snd_shoot, 0, false, 1, 0, random_range(0.8, 1.2));
+//}
