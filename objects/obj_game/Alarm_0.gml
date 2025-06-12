@@ -1,5 +1,6 @@
+///@description Create mob randomly
 //room_restart();
-randomize();
+//randomize();
 
 //room_goto(rm_menu);
 var spawn_location = choose("top", "bottom", "left","right");

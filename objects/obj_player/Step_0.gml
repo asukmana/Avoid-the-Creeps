@@ -92,6 +92,21 @@ else if (keyboard_check_released(vk_down) && keyboard_check_released(vk_right))
     motion_set(315, 0);
 	image_speed = 0;
 }
+
+var player_distance = point_distance(x,y,mouse_x,mouse_y);
+if player_distance > 5 and mouse_check_button(mb_left)
+{
+	direction = point_direction(x,y,mouse_x,mouse_y);
+	speed = player_speed;
+	image_speed = 1;
+}
+else
+{
+	speed = 0;
+	image_speed = 0;
+}
+
+
 #endregion
 
 //clamp player movement
